@@ -51,8 +51,7 @@ const customNumberInput = document.getElementById("customNumber");
         // Function to change the image source based on select list option
         function changeImage() {
             const selectedImage = imageSelect.value;
-            images.src = selectedImage;
-            images.removeAttribute("alt");
+            images.src = `./img/${selectedImage}`;;
         }
 
         // Event listeners for button clicks
